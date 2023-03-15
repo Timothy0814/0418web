@@ -1,0 +1,78 @@
+CREATE TABLE Class
+(  cID int PRIMARY KEY IDENTITY(1,1),
+   spID int NOT NULL,
+   cCode varchar(10) NOT NULL,
+   cName varchar(30) NOT NULL,
+   cNumber int,
+   cYear int,
+   cRemark varchar(max）(16),
+)
+GO
+
+CREATE TABLE Student
+(  sID int PRIMARY KEY IDENTITY(1,1),
+   cID int NOT NULL,
+   sCode varchar(20) NOT NULL,
+   sName varchar(30)  NOT NULL,
+   sSex varchar(2),
+   sBirth datetime(8),
+   sNation char(2),
+   sCard char(18),
+   sPhone varchar(20),
+)
+GO
+
+CREATE TABLE Teacher
+(  tID int PRIMARY KEY IDENTITY(1,1),
+   dID int NOT NULL,
+   tCode varchar(10) NOT NULL,
+   tName varchar(30) NOT NULL,
+   tSex varcher(2),
+   tSpecial varcher(30）,
+   tTitle varcher(10),
+   tDegree varcher(10),
+   tDegree varcher(10),
+   tRemark varcher(max)(16)
+)
+GO
+
+
+CREATE TABLE Course
+(  coID int PRIMARY KEY IDENTITY(1,1),
+   coCode varcher(10),
+   coName varcher(60),
+   coType varcher(8),
+   coTheory int,
+   coPratice int,
+   coCredit int,
+)
+GO⁪
+
+CREATE TABLE TeachCourse
+  (   tcID int PRIMARY KEY IDENTITY(1,1),
+      tID int NOT NULL,
+      coID int NOT NULL,
+      tcTime varchar(50),
+)   
+GO
+
+
+CREATE TABLE StudentCourse
+  (   scID int PRIMARY KEY IDENTITY(1,1),
+      tcID int NOT NULL,
+      sID int NOT NULL,
+      scRegGrade decimal(5),
+      scTestGrade decimal(5),
+      scJudge varcher(max)(16),
+      scFlag int
+)   
+GO
+
+
+CREATE TABLE AdminUser
+  (   aID int PRIMARY KEY IDENTITY(1,1),
+      aName varcher(50) NOT NULL,
+      aPwd varbinary(128) NOT NULL,
+      aLoginTime datetime(8)
+)   
+GO
