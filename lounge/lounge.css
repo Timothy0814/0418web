@@ -23,4 +23,16 @@ h2 {
   background-color:    #a7cece;
   padding:             25px; 
   margin:              30px;  /* 新增外边距 */
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 25px;
+  padding-left: 80px;
 }
+
+html {
+	line-height: 1.9em;
+	color: #444444;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman';
+	}
