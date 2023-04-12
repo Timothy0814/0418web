@@ -1,0 +1,27 @@
+.right {
+	float: right;
+}
+
+div.block {
+	width: 45vw;
+	height: 20vh;
+	border: 2px solid lightblue;
+}
+
+.top {
+	margin-bottom: 10px;
+}
+
+.bottom {
+	margin-top: 20px;
+}
+
+.ruler {
+	height: 20px;
+}
+
+.one{
+width: 30px;
+height: 45px;
+background-color: lightgreen
+}
