@@ -12,6 +12,7 @@
   margin: 30px 10px;
   background-color: lightsteelblue;
   border:thin solid lightsteelblue;
+  position: relative;
 }
 .child {
   width: 10vw;
