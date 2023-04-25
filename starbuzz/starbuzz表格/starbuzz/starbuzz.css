@@ -16,8 +16,8 @@ body {
   font-size:        105%;
   padding:          15px;
   /* margin:           0px 10px 10px 10px; */
-  display: table-cell;
-  vertical-align: top;  /* 垂直对齐: 顶端对齐 */
+  display:          table-cell;
+  vertical-align:   top;  /* 垂直对齐: 顶端对齐 */
 }
 
 .sidebar {
@@ -25,8 +25,8 @@ body {
   font-size:        105%;
   padding:          15px;
   /* margin:           0px 10px 10px 10px; */
-  display: table-cell;
-  vertical-align: top;
+  display:          table-cell;
+  vertical-align:   top;
 }
 
 .footer {
@@ -43,7 +43,8 @@ h1 {
   color:            #954b4b;
 }
 
-.slogan { color: #954b4b; }
+.slogan { 
+  color: #954b4b; }
 
 .beanheading {
   text-align:       center;
@@ -62,10 +63,40 @@ a:visited {
 }
 
 div.tableContainer {
-  display: table;
-  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
+  display:          table;
+  border-spacing:   10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
 }
 
 div.talbeRow {
-  display: table-row;
+  display:         table-row;
 }
+
+.drinks {
+    background-color: #efe5d0;
+    padding:       15px;
+    display:       table-cell;
+    vertical-align: top;
+}
+
+.sprite-container {
+    width: 260px;
+    height: 100%; 
+    overflow: hidden;
+    background-image: url('img_navsprites.gif');
+}
+.header-logo {
+  background-image: url('images/header.gif');
+	background-position-x: 0px;
+	background-position-y: 0px;
+}
+
+.header-slogan {
+	background-image: url('images/header.gif');
+	background-position: -260px 0px;
+  float: right;
+}
+
+
+
+
+
